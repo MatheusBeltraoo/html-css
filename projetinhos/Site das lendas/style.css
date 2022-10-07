@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(67, 199, 195);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(168, 71, 14);
+    text-shadow: 7px 7px 20px black;
+}
+main{
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+    height: 350px;
+    box-shadow: 15px 15px 30px black;
+}
+
+.box{
+    display: inline-block;
+    padding: 30px;
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .dropdown{
+            background-color: red;
+            display: inline-block;
+        }
+        .dropdown-itens{
+            background-color: lightcoral;
+            padding: 5px;
+            display: none;
+        }
+        .dropdown-itens > a{
+            display: block;
+        }
+        .btn-menu{
+            background-color:aqua ;
+            padding: 5px 5px 5px 4px;
+            color: aliceblue;
+        }
+        .dropdown:hover .dropdown-itens{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <a href="#" class="btn-menu">Menu</a>
+        <div class="dropdown-itens">
+        <a href="#">Link_1</a>
+        <a href="#">Link_2</a>
+        <a href="#">Link_3</a>
+        </div>
+    </div>
+</body>
+</html>
