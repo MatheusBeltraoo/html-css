@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0"
+    />
 </head>
 <body>
     <header>
@@ -41,14 +45,34 @@
 
   
     <main>
-        <button onclick="toggleModal()" type="button">Open Modal</button>
+        <button onclick="toggleModal()" type="button">Cadastrar</button>
         <div class="modal-background" onclick="toggleModal()"></div>
         <div class="modal">
-            <h2>Modal Window</h2>
-            <p>
-            You have opened the modal, they are great for confirming actions or
-            displaying critical information.
-            </p>
+            <form action="">
+                <div class="textbox">
+                    <input type="text"/>
+                    <label>Nome</label>
+                    <span class="material-symbols-outlined"> person </span>
+                </div>
+
+                <div class="textbox">
+                    <input type="text" id="email" maxlength="60" size='40' required />
+                    <label>Email</label>
+                    <span class="material-symbols-outlined"> email </span>
+                  </div>
+
+                  <div class="textbox">
+                    <input type="password" id="senha" maxlength="60" size='40' required />
+                    <label>Senha</label>
+                    <span class="material-symbols-outlined"> key </span>
+                  </div>
+          
+                  <button type="submit" value="Entrar">
+                    Entrar
+                    <span class="material-symbols-outlined"> arrow_forward </span>
+                  </button>
+                  
+            </form>
         </div>
     </main>
     <script>
