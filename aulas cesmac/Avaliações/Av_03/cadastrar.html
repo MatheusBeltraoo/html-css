@@ -50,7 +50,7 @@
         <div class="modal">
             <form action="">
                 <div class="textbox">
-                    <input type="text"/>
+                    <input type="text" required/>
                     <label>Nome</label>
                     <span class="material-symbols-outlined"> person </span>
                 </div>
@@ -66,6 +66,12 @@
                     <label>Senha</label>
                     <span class="material-symbols-outlined"> key </span>
                   </div>
+                  
+                  <div class="textbox">
+                    <input type="password" id="confirmar_senha" maxlength="60" size='40' required />
+                    <label>Confirmar Senha</label>
+                    <span class="material-symbols-outlined"> key </span>
+                  </div>
           
                   <button type="submit" value="Entrar">
                     Entrar
@@ -77,7 +83,7 @@
     </main>
     <script>
         
-          const toggleModal = () => {
+            const toggleModal = () => {
             const bodyClassList = document.body.classList;
             if (bodyClassList.contains("open")) {
               bodyClassList.remove("open");
@@ -87,6 +93,26 @@
               bodyClassList.add("open");
             }
           };
+
+          var senha = document.getElementById("senha"),
+          confirmar_senha = document.getElementById("confirmar_senha");
+
+          function validarSenha(){
+            if(senha.value != confirmar_senha.value) {
+              confirmar_senha.setCustomValidity("Senhas diferentes");
+            } else {
+              confirmar_senha.setCustomValidity('');
+            }
+          }
+
+          senha.onchange = validarSenha;
+          confirmar_senha.onkeyup = validarSenha;
+
+
+
+
+
+          
         
     </script>
 </body>
