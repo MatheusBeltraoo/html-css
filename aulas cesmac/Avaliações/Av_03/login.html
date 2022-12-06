@@ -41,7 +41,7 @@
         <div class="signup">
             <h2>Sign Up</h2>
             
-            <form onsubmit="return logar()" action="login-sucesso.html" class="form">
+            <form onsubmit="return logar()" action="index.html" class="form">
   
               <div class="textbox">
                 <input type="text" id="email" maxlength="60" size='40' required />
@@ -54,8 +54,8 @@
                 <span class="material-symbols-outlined"> key </span>
               </div>
               <p>
-                Nao possui conta? Crie
-                <a href="cadastrar.html">Cadastrar</a>
+                Não possui conta? Crie
+                <a href="cadastrar.html">Cadastrar-se</a>
               </p>
       
               <button type="submit" value="Entrar">
@@ -73,17 +73,19 @@
     </main>
 
     <script>
-        function logar() {
-            var email = document.getElementById('email');
-            var senha = document.getElementById('senha');
-    
-            if (email.value === 'alunos@cesmac.edu.br' && senha.value === 'aluno2022')
-                return true;
-            else {
-             document.getElementById("msglogin").innerHTML="<font color='red'>E-mail ou senha inválidos!";
-                alert ("Usuário ou senha incorreto!");
-                return false;}
-            } 
-      </script>
+      function logar() {
+        var email = document.getElementById('email');
+        var senha = document.getElementById('senha');        
+        
+        if (email.value === 'alunos@cesmac.edu.br' && senha.value === 'aluno2022')
+          return true;
+          
+        else {
+         document.getElementById("msglogin");
+            alert ("Usuário ou senha incorreto!");
+            return false;}
+        } 
+
+    </script>
 </body>
 </html>

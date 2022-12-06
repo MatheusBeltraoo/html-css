@@ -28,7 +28,7 @@ button, input {
     height: 100%;
     width: 40%;
     padding: 200px 90px;
-    background: #ff0057;
+    background: #2c59fb;
 }
 
 .signup > h2 {
@@ -64,7 +64,7 @@ button, input {
     height: 72px;
 }
 
-input:focus {border-color: #367ae8;}
+input:focus {border-color: #00aae8;}
 
 :is(input:focus, input:valid) ~ span {
     color: rgb(255, 255, 255 / 96%);
@@ -102,4 +102,4 @@ button {
 }
 
 .signup p {color: #f9f9f9;}
-.signup p > a {color: #012865;}
+.signup p > a {color: #021e4a;}

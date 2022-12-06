@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <label for="nome">Nome:</label>
+    <input onkeyup="teclar(event)" id="nome" type="text"> <br> <br>
+    <button onclick="adicionar()">Adicionar na fila</button> <br> <br>
+    <button onclick="removerPrimeiro()">Remover Primeiro da fila</button> <br> <br>
+    <button onclick="removerUltimo()">Remover último da fila</button> <br> <br>
+    <label for="nome_especifico">Nome para remover:</label>
+    <input id="nome_especifico" type="text"> <br> <br>
+    <button onclick="removerNome()">Remover pelo nome</button> <br> <br>
+
+    <div id="resultado">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
